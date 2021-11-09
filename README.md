@@ -19,4 +19,10 @@ The main function `est_risk` estimates the cumulative incidence of outcome. This
 * `dat`: the data set as a `data.table` object
 * `mod_ps`: the propensity score model with `fitted.values` as one of the attributes (usually from `glm`)
 * `dta`: the constant additive shift parameter in between 0 and 1
-* `det`: boolean indicator if the intervention is deterministic (`r TRUE` if deterministic)
+* `det`: `TRUE` if the intervention is deterministic
+* `cuminc`: `TRUE` if the cumulative incidence is desired for all time points
+* `comp`: `TRUE` if there is a competing risk outcome
+
+```r
+test
+```
