@@ -1,8 +1,8 @@
 # NorPEN 2021 IPW
-This repository provides the functions for estimating causal effects of incremental propensity score interventions using IPW in a survival time setting.
+This repository provides the functions for estimating causal effects of incremental propensity score interventions using inverse probability weighting (IPW) in a survival time setting.
 
 ## Prerequisites
-* The data object is a `data.table` and contains the following variables:
+* The input data object needs to be a `data.table` and contain the following variables:
     1. `id`: a unique individual identifier
     2. `t0`: a discrete time variable
     3. `rf`: a binary variable to specify the subset of the population for which the intervention is assigned to
@@ -13,6 +13,7 @@ This repository provides the functions for estimating causal effects of incremen
 * The individual has no records after the time interval in which the outcome `Y` occurs
 * The outcome `Y` is deterministically 0 for all time intervals after the competing risk `D` has occurred
 * `form`: the formula for the propensity score model e.g. `as.formula("A ~ L1 + L2 + t0")`
+* R package dependencies: `data.table`, `ggplot2`, `Epi`
 
 ## Usage
 The main function `est_risk` estimates the cumulative incidence of outcome. This is the proportion of individuals who have failed at a specific interval after accounting for time-varying confounding. This has the following parameters:
