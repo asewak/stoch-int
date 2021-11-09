@@ -28,5 +28,15 @@ For example
 est_risk(dat=dat, mod_ps=mod_ps, dta=0.4, det=F, cuminc=T, comp=F)
 ```
 
-## Plots
+## What is in this repository?
 
+Functions
+* `est_stoch_int.R`: function to estimate the propensity score and to estimate the risk
+* `est_boot.R`: nonparametric bootstrap for confidence intervals of estimates
+* `plot_cuminc.R`: produces an adjusted cumulative incidence plot
+* `plot_rrr.R`: produces a plot of the relative risk reduction varying by delta
+* `example.R`: example usage of the estimation and plotting functions
+
+Example data set
+* `dat.RDS`: simulated example data set meeting the above prerequisites
+* `boot_dta.RDS`: bootstrap output from 1000 resamples of the example data set
