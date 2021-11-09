@@ -22,6 +22,7 @@ The main function `est_risk` estimates the cumulative incidence of outcome. This
 * `det`: `TRUE` if the intervention is deterministic
 * `cuminc`: `TRUE` if the cumulative incidence is desired for all time points
 * `comp`: `TRUE` if there is a competing risk outcome
+
 For example
 ```r
 est_risk(dat=dat, mod_ps=mod_ps, dta=0.4, det=F, cuminc=T, comp=F)
