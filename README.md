@@ -27,3 +27,6 @@ For example
 ```r
 est_risk(dat=dat, mod_ps=mod_ps, dta=0.4, det=F, cuminc=T, comp=F)
 ```
+
+## Plots
+
