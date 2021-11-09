@@ -13,3 +13,10 @@ This repository provides the functions for estimating causal effects of incremen
 * The individual has no records after the time interval in which the outcome `Y` occurs
 * The outcome `Y` is deterministically 0 for all time intervals after the competing risk `D` has occurred
 * `form`: the formula for the propensity score model e.g. `as.formula("A ~ L1 + L2 + t0")`
+
+## Usage
+The main function `est_risk` estimates the cumulative incidence of outcome. This is the proportion of individuals who have failed at a specific interval after accounting for time-varying confounding. This has the following parameters:
+* `dat`: the data set as a `data.table` object
+* `mod_ps`: the propensity score model with `fitted.values` as one of the attributes (usually from `glm`)
+* `dta`: the constant additive shift parameter in between 0 and 1
+* `det`: boolean indicator if the intervention is deterministic (`r TRUE` if deterministic)
