@@ -24,5 +24,5 @@ The main function `est_risk` estimates the cumulative incidence of outcome. This
 * `comp`: `TRUE` if there is a competing risk outcome
 
 ```r
-cuminc <- est_risk(dat, mod_ps=mod_ps, dta=0.4, det=F, cuminc=T, comp=F)
+est_risk(dat, mod_ps=mod_ps, dta=0.4, det=F, cuminc=T, comp=F)
 ```
