@@ -1,2 +1,2 @@
-# IPW estimator for incremental propensity score interventions
+# NorPEN 2021 IPW
 Estimating causal effects of stochastic dynamic interventions using IPW
