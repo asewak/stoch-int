@@ -1,6 +1,6 @@
 require(data.table)
 require(parallel)
-source("est_stch_int.R")
+source("est_stoch_int.R")
 set.seed(100)
 n_cores <- 6
 

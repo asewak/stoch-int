@@ -1,5 +1,5 @@
 require(data.table)
-source("est_stch_int.R")
+source("est_stoch_int.R")
 source("plot_cuminc.R")
 source("plot_rrr.R")
 options("digits" = 4)
