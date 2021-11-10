@@ -20,8 +20,8 @@ dat_est <- copy(dat)
 # Deterministic
 # Note: when det=T, dta can only take either 0 or 1
 # Here dta=0 indicates "never treat" and dta=1 indicates "always treat" for the full population
-(cuminc_trt <- est_risk(dat_est, mod_ps=mod_ps, dta=1, det=T, cuminc=F, comp=F))
-(cuminc_ctrl <- est_risk(dat_est, mod_ps=mod_ps, dta=0, det=T, cuminc=F, comp=F))
+(cuminc_nt <- est_risk(dat_est, mod_ps=mod_ps, dta=0, det=T, cuminc=F, comp=F))
+(cuminc_at <- est_risk(dat_est, mod_ps=mod_ps, dta=1, det=T, cuminc=F, comp=F))
 
 # Plots
 # Plot cumulative incidence
