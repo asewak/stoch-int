@@ -89,13 +89,14 @@ est_risk <- function(dat, mod_ps, dta=0.1, det=F, cuminc=F, comp=F){
                  A_nc=cumsum(h_nc))]
   mu_A <- cuminc_A[,.(A_int=sum(h_int),
                       A_nc=sum(h_nc))]
+  cuminc_A[,`:=`(h_int=NULL, h_nc=NULL)]
   
   # Final output table
   if(comp) {
-    cuminc_all <- cuminc_comp[cuminc_A,]
+    cuminc_all <- cuminc_comp[cuminc_A, ]
     mu_all <- unlist(c(mu_comp,mu_A))
   } else {
-    cuminc_all <- cuminc_base[cuminc_A,]
+    cuminc_all <- cuminc_base[cuminc_A, ]
     mu_all <- unlist(c(mu,mu_A))
   }
   

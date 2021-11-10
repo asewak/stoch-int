@@ -4,7 +4,7 @@ require(ggplot2)
 plot_cuminc <- function(cuminc){
   ci <- copy(cuminc)
   ci[,t0:=t0+1]
-  ci <- rbind(as.list(rep(0,7)),ci)
+  ci <- rbind(as.list(rep(0,5)),ci)
   ci_t <- melt(ci, id.vars = c("t0"), measure.vars = list(c("Y_int", "Y_nc")),
                    value.name = c("risk"), variable.name = "treatment")
   ci_t[,treatment:=fcase(treatment=="Y_int","Intervention",
