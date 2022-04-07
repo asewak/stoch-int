@@ -1,4 +1,5 @@
 require(data.table)
+require(Epi)
 source("est_stoch_int.R")
 source("plot_cuminc.R")
 source("plot_rrr.R")
