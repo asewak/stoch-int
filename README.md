@@ -1,4 +1,4 @@
-# NorPEN 2021 IPW
+# IPW for stochastic dynamic interventions
 This repository provides the functions for estimating causal effects of incremental propensity score interventions using inverse probability weighting (IPW) in a survival time setting.
 
 ## Prerequisites
